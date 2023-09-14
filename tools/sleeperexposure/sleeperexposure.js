@@ -4,7 +4,7 @@ async function findexposures(username) {
     document.getElementById("container").innerHTML = "<img id='loadinggif' src='loading.gif'>"
 
     allplayers = localStorage.getItem('allplayers')
-    const response = await fetch("https:api.sleeper.app/v1/user/" + username);
+    const response = await fetch("https://api.sleeper.app/v1/user/" + username);
     
     allplayers = JSON.parse(allplayers)
     
