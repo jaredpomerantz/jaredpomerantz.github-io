@@ -1,4 +1,4 @@
-piclist = ["images/quadcad.jpg", "images/dronegif.gif", "images/windshieldcad.jpg", "images/windshieldcleaner.jpg", "images/walker.gif"]
+piclist = ["images/quadcad.jpg", "images/dronegif.gif", "images/windshieldcad.jpg", "images/windshieldcleaner.JPG", "images/walker.gif"]
 idlist = ["slide1", "slide2", "slide3", "slide4", "slide5"]
 activeindex = 0
 
