@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>Sleeper Fantasy Football Exposure Tool</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Home">
+   <meta name="author" content="Jared Pomerantz">
+   <script src="allplayers.js" defer></script>
+   <script src="sleeperexposure.js" defer></script>
+   <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+</head> 
+
+<body>
+
+    <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+    <link href="sleeperexposure.css" rel="stylesheet">
+
+    
+    
+    <div id="header">
+
+    </div>
+    
+    <div id="title">
+       <h1>
+          Fantasy Football Exposure Chart for Sleeper Leagues
+       </h1>
+    </div>
+
+
+    <div id="inputfield">
+        <span><b>Input Sleeper Username here: </b></span><input type="text" id="username">
+        <input type="submit" onclick="findexposures(document.getElementById('username').value)">
+    </div>
+
+    <br>
+    <br>
+
+    <div id="container">
+        <img id="placeholderimage" src="">
+    </div>
+
+</body>
+</html>

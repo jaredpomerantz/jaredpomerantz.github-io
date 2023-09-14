@@ -1,0 +1,245 @@
+* {
+    background-color: #2f2e2e;
+    color: white;
+    font-family: 'Nova Flat';
+}
+
+#header span{
+    height: 90%;
+    text-decoration: none;
+}
+
+#header :hover{
+    background-color: rgb(138, 90, 0);
+    color:white;
+}
+
+#homebutton {
+    position: absolute;
+    top: auto;
+    left: 100px;
+    height: 75%;
+    text-decoration: none;
+    font-size: 30px;
+    width:250px;
+    margin-top:8px;
+    text-align:center;
+    background-color: orange;
+    color:black;
+    border-left: 2px solid rgb(62, 62, 62);
+    border-right: 2px solid rgb(62, 62, 62);
+}
+
+#projectbutton {
+    position: absolute;
+    top: auto;
+    left: 1000px;
+    height: 75%;
+    text-decoration: none;
+    font-size: 24px;
+    width:250px;
+    margin-top:8px;
+    text-align:center;
+    background-color: orange;
+    color:black;
+    border-left: 2px solid rgb(62, 62, 62);
+}
+
+#toolsbutton {
+    position: absolute;
+    top: auto;
+    left: 1250px;
+    height: 75%;
+    text-decoration: none;
+    font-size: 24px;
+    width:350px;
+    margin-top:8px;
+    text-align:center;
+    background-color: orange;
+    color:black;
+    border-left: 2px solid rgb(62, 62, 62);
+    border-right: 2px solid rgb(62, 62, 62);
+}
+
+#title {
+    text-align: center;
+    display: block;
+    height: 150px;
+    position:absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title h1{
+    font-size: 60px;
+}
+
+#header {
+    background-color: orange;
+    height:50px;
+    width: 100%;
+    border: 0px;
+    margin-top:0px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 0px;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+#lefthalf {
+    position: absolute;
+    float: left;
+    width: 30%;
+    height: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    top:250px;
+    transition: 0.5s;
+}
+
+#lefthalf a {
+    text-decoration: none;
+}
+
+#lefthalf span {
+    width:150px;
+}
+
+#lefthalf span :hover{
+    background-color: #565656;
+    cursor:pointer;
+
+}
+
+#lefthalf #slides {
+    width: 80%;
+    display:block;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lefthalf span {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor:default;
+}
+
+#lefthalf span button {
+    border-radius: 20px;
+    padding: 8px;
+    border:none;
+    background-color: #565656;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+#lefthalf span :hover{
+    background-color: #8f8f8f;
+}
+
+#lefthalf span .activebutton {
+    background-color: #cacaca;
+}
+
+#leftslidecontainer {
+    height:400px;
+    width: 100%;
+
+}
+
+#middle {
+    text-align: left;
+    width: 30%;
+    position:absolute;
+    top:auto;
+    left:35%;   
+    top:250px;
+}
+
+#jared {
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+#middle h2{
+    text-align: center;
+}
+
+#righthalf {
+    text-align: center;
+    width: 30%;
+    position:absolute;
+    top:250px;
+    left:70%;
+    
+}
+
+#righthalf a {
+    text-decoration: none;
+    text-align: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#righthalf h2{
+    width:400px;
+    text-align: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#righthalf span :hover{
+    background-color: #8f8f8f;
+    cursor:pointer;
+}
+
+#righthalf span button {
+    border-radius: 20px;
+    padding: 8px;
+    border:none;
+    background-color: #565656;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+#righthalf span .activebutton {
+    background-color: #cacaca;
+}
+
+#rightslidecontainer {
+    height:500px;
+    width: 100%;
+}
+
+#rightslides {
+    
+    transition: 0.5s;
+    width: 80%;
+    display:block;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

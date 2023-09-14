@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>Home</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Home">
+   <meta name="author" content="Jared Pomerantz">
+   <script src="home.js" defer></script>
+</head> 
+
+<body>
+
+<link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+<link href="home.css" rel="stylesheet">
+
+<div id="header">
+    <a id="homebutton" href="index.html">Home Page</a>
+
+    <a id="projectbutton" href="projects/index.html">Projects</a>
+    
+    <a id="toolsbutton" href="tools/index.html">Interactive Tools</a>
+
+</div>
+
+<div id="title">
+   <h1>
+      Jared Pomerantz's Personal Portfolio
+   </h1>
+</div>
+
+
+    <div id="lefthalf">
+
+        <a href="project/" id="projectlink">
+            <span>
+                <h2>
+                    Projects
+                </h2>
+            </span>
+        </a>
+        
+        <span>
+            <button id="slide1" onclick="slides('slide1')" class="activebutton"></button>
+            <button id="slide2" onclick="slides('slide2')"></button>
+            <button id="slide3" onclick="slides('slide3')"></button>
+            <button id="slide4" onclick="slides('slide4')"></button>
+            <button id="slide5" onclick="slides('slide5')"></button>
+        </span>
+        
+        <br>
+
+        <div id="leftslidecontainer">
+            <img src="images/quadcad.jpg" alt="" id="slides">
+        </div>
+
+    </div>
+
+<div id = "middle">
+    <h2>
+        Who Am I?
+    </h2>
+    <img id="jared" src="images/jared.jpg"><br>
+    <p>
+        My name is Jared Pomerantz, and I am a Mechanical Engineering graduate (Class of 2023) from the University of Texas at Austin. 
+        I am passionate about building new projects as a Mechanical, Electronics, and Software Engineer and I look to develop more skills throughout all of these disciplines.
+        <br>
+        <br>
+        I built this website to record the projects that I have made since the beginning of my undergraduate education in 2019, and I look to continuously add more.
+    </p>
+</div>
+
+<div id="righthalf">
+    
+    <a href="tools/index.html" id="toolslink">
+        <span>
+            <h2>
+                Interactive Tools and Activities
+            </h2>
+        </span>
+    </a>
+
+    <span>
+        <button id="leftslide1" onclick="slides('leftslide1')" class="activebutton"></button>
+    </span>
+    <br><br>
+
+    <div id="rightslidecontainer">
+        <img src="images/sleeperexposure.jpg" alt="" id="rightslides">
+    </div>
+
+
+    
+</div>
+
+</body>
+</html>
