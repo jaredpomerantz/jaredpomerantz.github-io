@@ -90,3 +90,45 @@
     left:0px;
     top:0px;
 }
+
+#tablediv {
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+#maintable {
+    width:90%;
+    position:absolute;
+    top: 250px;
+    left: 70px;
+}
+
+#maintable td {
+    border:2px solid white;
+}
+
+#maintable tr {
+    border:2px solid white;
+}
+
+#maintable th {
+    border:2px solid white;
+}
+
+#maintable img{
+    width:500px;
+}
+
+.entrytitle {
+    width:20%;
+}
+
+.entrydescription {
+    width:60%;
+}
+
+.entryimage {
+    width:20%;
+}
