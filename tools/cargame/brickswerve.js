@@ -187,7 +187,16 @@ function gameStart() {
                 holeLocations.push(newLocation)
             }
 
-            maxHoleShift = 180
+            
+            if (parseInt(document.getElementById("score").innerHTML) < 50000) {
+                maxHoleShift = 180
+            }
+            else if (parseInt(document.getElementById("score").innerHTML) < 100000) {
+                maxHoleShift = 200
+            }
+            else {
+                maxHoleShift = 225
+            }
 
             if (!(holeLocations.some(function(val) {return xrel - maxHoleShift < val && val < xrel + maxHoleShift})) || Math.min(holeLocations) > 360) {
                 

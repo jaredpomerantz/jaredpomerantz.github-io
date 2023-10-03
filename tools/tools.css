@@ -132,3 +132,8 @@
 .entryimage {
     width:20%;
 }
+
+td h2{
+    font-size: 24px;
+    padding: 8px;
+}
