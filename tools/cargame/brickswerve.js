@@ -45,8 +45,6 @@ function gameStart() {
     leftBound = document.getElementById("wall1").getBoundingClientRect().right
     rightBound = document.getElementById("wall2").getBoundingClientRect().left
 
-    console.log(leftBound)
-    
     container.style.backgroundColor = "#959da1"
 
     obstacleMaster = []
@@ -152,6 +150,12 @@ function gameStart() {
             }
             else {
                 finalscore = parseInt(document.getElementById("score").innerHTML)
+                //if (finalscore > highscore) {
+                //    highscore = finalscore
+                //    document.cookie = "highscore: " + toString(highscore) + ";"
+                //    document.getElementById("highscore").innerHTML = "High score: " + highscore
+                //    document.getElementById("score").innerHTML = "NEW HIGH SCORE: " + finalscore
+                //}
                 document.getElementById("score").innerHTML = "GAME OVER: " + finalscore
 
                 refreshLink = document.createElement("a")
@@ -164,7 +168,6 @@ function gameStart() {
                 refreshLink.appendChild(refreshButton)
                 refreshButton.setAttribute("id", "refresh")
                 refreshButton.setAttribute("type", "button")
-                refreshButton.setAttribute("onclick", 'function reload() {window.location.reload()}')
                 refreshButton.setAttribute("value", "Play Again!")
                 refreshButton.setAttribute("class", "gamebutton")
                 
