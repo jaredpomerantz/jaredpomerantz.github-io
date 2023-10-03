@@ -18,7 +18,7 @@ function gameStart() {
     xrel = 290
     car.style.left = xrel + "px"
     car.style.marginTop = "300px"
-    car.style.border = "2px solid black"
+    car.style.backgroundColor = "transparent"
 
     wall1 = document.createElement("div")
     car.after(wall1)
