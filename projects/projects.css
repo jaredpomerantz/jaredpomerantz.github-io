@@ -4,6 +4,20 @@
     font-family: 'Nova Flat';
 }
 
+#header {
+    background-color: orange;
+    height:50px;
+    width: 100%;
+    border: 0px;
+    margin-top:0px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 0px;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
 #header span{
     height: 90%;
     text-decoration: none;
@@ -33,7 +47,7 @@
 #projectbutton {
     position: absolute;
     top: auto;
-    left: 1000px;
+    right: 350px;
     height: 75%;
     text-decoration: none;
     font-size: 24px;
@@ -48,7 +62,8 @@
 #toolsbutton {
     position: absolute;
     top: auto;
-    left: 1250px;
+    /*left: 1250px;*/
+    right: 0px;
     height: 75%;
     text-decoration: none;
     font-size: 24px;
