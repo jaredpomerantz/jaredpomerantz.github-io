@@ -92,6 +92,10 @@
     font-size: 60px;
 }
 
+img{
+    border: 2px solid white;
+}
+
 #lefthalf {
     position: absolute;
     float: left;
