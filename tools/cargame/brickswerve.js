@@ -186,50 +186,52 @@ function gameStart() {
             roadwidth = 400
 
             for (i=0; i < numOfHoles; i++) {
-                newLocation = Math.floor(Math.random() * (roadwidth - 40)) + 1
+                newLocation = Math.floor(Math.random() * 360) + 1
                 holeLocations.push(newLocation)
             }
 
             
-            if (parseInt(document.getElementById("score").innerHTML) < 50000) {
+            if (parseInt(document.getElementById("score").innerHTML) < 100000) {
                 maxHoleShift = 180
             }
-            else if (parseInt(document.getElementById("score").innerHTML) < 100000) {
-                maxHoleShift = 200
-            }
             else {
-                maxHoleShift = 225
+                maxHoleShift = 200
             }
 
             if (!(holeLocations.some(function(val) {return xrel - maxHoleShift < val && val < xrel + maxHoleShift})) || Math.min(holeLocations) > 360) {
                 
                 if (xrel - maxHoleShift < 100) {
-                    newLocation = Math.floor(Math.random() * (xrel + maxHoleShift - 100)) + 100
+                    console.log("left")
+                    newLocation = Math.floor(Math.random() * maxHoleShift)
                 }
                 else if (xrel + maxHoleShift > 500) {
+                    console.log("right")
                     newLocation = Math.floor(Math.random() * maxHoleShift) + 140
                 }
                 else {
-                    newLocation = Math.floor(Math.random() * maxHoleShift * 2) + (xrel - maxHoleShift)
+                    console.log("middle: xrel = " + xrel)
+                    newLocation = Math.floor(Math.random() * maxHoleShift) + (xrel - maxHoleShift)
                 }
                 holeLocations.push(newLocation)
+                console.log(newLocation)
+
+                
             }
 
+            
             holeLocations.sort(function(a, b) {return a > b ? 1 : -1});
             obstacles = {}
             minObstacle = 0
 
+            console.log(holeLocations)
+
             for (i=0; i < holeLocations.length; i++) {
-                if (minObstacle < holeLocations[i]) {
+                if (minObstacle < holeLocations[i] || holeLocations[i] + 45 > roadwidth) {
                     obstacles[minObstacle] = holeLocations[i] - minObstacle
                 }
-                if (holeLocations[i] + 45 > roadwidth) {
-                    obstacles[minObstacle] = roadwidth - minObstacle
-                }
-                else {
-                    minObstacle = holeLocations[i] + 45
-                }
                 
+                minObstacle = holeLocations[i] + 45
+                                
             }
 
             obstacles[minObstacle] = roadwidth - minObstacle
