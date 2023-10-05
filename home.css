@@ -4,6 +4,20 @@
     font-family: 'Nova Flat';
 }
 
+#header {
+    background-color: orange;
+    height:50px;
+    width: 100%;
+    border: 0px;
+    margin-top:0px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 0px;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
 #header span{
     height: 90%;
     text-decoration: none;
@@ -76,20 +90,6 @@
 
 #title h1{
     font-size: 60px;
-}
-
-#header {
-    background-color: orange;
-    height:50px;
-    width: 100%;
-    border: 0px;
-    margin-top:0px;
-    margin-left:0px;
-    margin-right: 0px;
-    padding: 0px;
-    position:absolute;
-    left:0px;
-    top:0px;
 }
 
 #lefthalf {
